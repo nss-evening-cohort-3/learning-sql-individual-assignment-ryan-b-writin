@@ -4,4 +4,4 @@ SELECT BillingCountry, ROUND(SUM(Total), 2) AS NationalSales, TopSpendingCountry
 (SELECT NationalSales.BillingCountry AS TopSpendingCountry, MAX(NationalSales.TotalPerCountry) AS TopSpent FROM 
 (SELECT BillingCountry, SUM(Total) AS TotalPerCountry FROM InvoiceGROUP BY BillingCountry) AS NationalSales) 
 AS Top 
-JOIN Invoice GROUP BY BillingCountry
+JOIN Invoice GROUP BY BillingCountry;
