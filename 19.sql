@@ -7,4 +7,4 @@ JOIN Customer ON Invoice.CustomerId = Customer.CustomerId
 JOIN Employee ON Customer.SupportRepId = Employee.EmployeeId
 JOIN InvoiceLine ON Invoice.InvoiceId = InvoiceLine.InvoiceId
 WHERE InvoiceDate LIKE '2009%' 
-GROUP BY Employee.EmployeeId) AS 'Sales2009'
+GROUP BY Employee.EmployeeId) AS 'Sales2009';
