@@ -4,4 +4,4 @@ SELECT InvoiceLineId, Track.Name AS 'Track Name', Artist.Name AS 'Artist Name' F
 JOIN Track ON InvoiceLine.TrackId = Track.TrackId
 JOIN Album ON Track.AlbumId = Album.AlbumId
 JOIN Artist ON Artist.ArtistId = Album.ArtistId
-ORDER BY InvoiceLineId
+ORDER BY InvoiceLineId;
